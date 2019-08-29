@@ -8,81 +8,43 @@
     <title>Psychic Game</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-  
 
 </head>
 
 <body>
 
+    <h1>The Psychic
+         Game!</h1>
 
-    <h1>The Psychic Game</h1>
+    <div class="maincontainer">
+        <div class=row-md-9>
+            <h2>Guess what letter I'm thinking of:</h2>
 
-    <h2>Guess what letter I'm thinking of</h2>
+            <h3>Wins: <span id="win">0</span></h3>
 
-    <h2>Wins: <span id="win"></span></h2>
+            <h3>Losses: <span id="loss">0</span></h3>
 
-    <h2>Losses: <span id="loss"></span></h2>
+            <h3>Guesses Left: <span id="guess-left">9</span></h3>
 
-    <h2>Guesses Left: <span id="guess-left"></span></h2>
+            <h3>Your Guesses so far: <span id="user"></span></h3>
 
-    <h2>Your Guesses so far: <span id="user"></span></h2>
-
-    <h2>Computer's choice:  </h2><span id="computer"></span></h2>
     
-  <script>
-  
-  var letters = 
-["a", "b", "c", "d",
-"e", "f", "g", "h",
-"i", "j", "k", "l",
-"m", "n", "o", "p",
-"q", "r", "s", "t",
-"u", "v", "w", "x",
-"y", "z"]
+        </div>
 
-console.log(letters)
+        <div class=row-md-3>
+             <iframe src="https://giphy.com/embed/26AHE5D3mbfAm1M4M" width="350" height="380" frameBorder="0"
+                class="giphy-embed" allowFullScreen></iframe>
+            <p><a href="https://giphy.com/gifs/love-the-future-crash-26AHE5D3mbfAm1M4M">via GIPHY</a></p>
+       
+        </div>
+    </div>
+        <footer>
 
-var userText = document.getElementById("user");
-var compText = document.getElementById("computer");
-var winText = document.getElementById("win");
-var loseText = document.getElementById("loss");
-var wins = 0;
-var losses = 0;
-var guesses = 9;
+                Made by Elisa Marques
+        </footer>
 
 
-// This specifies that computer only picks a key after the user has picked one
-// Display user's chose
-// Display computer's chose
-
-    //User picks a letters
-    document.onkeyup = function (event) {
-    var letter = letters[Math.floor(Math.random() * letters.length)]
-    console.log(letter) 
-     
-    // Display user's and computer's choice
-      compText.textContent = letter;
-      userText.textContent = event.key;
-      
-    //Compare the user's pick with the computer's pick
-    //Decide if user has lost/won
-    if (event.key === letter) {
-        //Display the win or loss score
-        wins++; winText.textContent = wins;
-    }
-
-    if (event.key != letter) {
-         //Display the win or loss score
-    losses++; loseText.textContent = losses;
-    }
-
-    //Decrease the number of guesses
-    
-
-    }
-  </script>
-
-
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 

@@ -1,0 +1,52 @@
+body {
+    width: 960px;
+    height: 100%
+
+}
+
+.maincontainer {
+    padding: auto;
+    margin-top: 60px;
+}
+.row-md-9 {
+    float:left;
+
+}
+
+.row-md-3 {
+    float: right;
+    text-align: center;
+}
+
+h1 {
+    font-size:40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+span {
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+}
